@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Proxy</string>
+    <string name="toastTop">swipe top</string>
+    <string name="toastBottom">swipe bottom</string>
+    <string name="toastLeft">swipe left</string>
+    <string name="toastRight">subscribed</string>
+
+</resources>
