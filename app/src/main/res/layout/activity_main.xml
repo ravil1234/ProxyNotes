@@ -4,16 +4,103 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_bcg"
     tools:context=".MainActivity">
-
     <VideoView
         android:id="@+id/videoview"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="8dp"
+        android:layout_margin="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintDimensionRatio="4:3"
+        app:layout_constraintDimensionRatio="4.4:5.2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:ignore="MissingConstraints"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="600dp"
+        tools:ignore="MissingConstraints">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:orientation="vertical"
+           android:layout_marginLeft="30dp"
+           >
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Like: "
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+           <ImageButton
+               android:layout_width="36dp"
+               android:layout_height="36dp"
+               android:onClick="like"
+               android:background="@drawable/like_logo"/>
+       </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        >
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:text="Save: "
+            android:textSize="18dp"/>
+        <ImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:onClick="save"
+            android:background="@drawable/save_logo"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:text="Share: "
+            android:textSize="18dp"/>
+        <ImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:paddingLeft="8dp"
+            android:onClick="share"
+            android:background="@drawable/share_logo"/>
+    </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:text="Swipe UP/DOWN"
+        android:textStyle="italic"
+        android:textColor="#fff"
+        android:layout_marginTop="45dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="90dp">
+    </TextView>
+</LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
