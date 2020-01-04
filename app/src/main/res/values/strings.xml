@@ -4,5 +4,6 @@
     <string name="toastBottom">swipe bottom</string>
     <string name="toastLeft">swipe left</string>
     <string name="toastRight">subscribed</string>
+    <string name="video">video file ended</string>
 
 </resources>
